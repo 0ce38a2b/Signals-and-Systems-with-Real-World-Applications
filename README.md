@@ -17,4 +17,36 @@ Fourier bases for C^N, N是维度
 - k will be the index that indicates different vector
 - small n, to indicate the index of the element within each vector
 
+##### Linear time-invariant filters
+Time invariance
+y[n] = H{x[n]} <==> H{x[n-n0]} = y[n-n0]    
+![image](https://user-images.githubusercontent.com/51925070/191734954-7bb23571-e9f5-46b7-bde5-d7cb533bc383.png)
+Another requirement that is not mandatory, but makes a lot of sensem, is that the system be causal.(the system can only have access to input and output values from teh past)
+![image](https://user-images.githubusercontent.com/51925070/191735668-0d67ce55-3bcb-49e9-b9e4-be9de4566ff1.png)
+
+##### Convolution
+![image](https://user-images.githubusercontent.com/51925070/191736639-53c73780-5f29-409b-8542-4e27f93fbe3b.png)
+In general, we can always write x[n](a generic discrete time sequence as the sum of time delayed deltas scaled by the values of the sequenceitself.)
+
+
+### MATLAB for Signal Processing Review
+#### Spectral Analysis Workflow
+- Import signals
+- Preprocess signals
+- Analyze spectrum
+- Filter signals
+- Deploy / Calculate features
+##### Preprocessing
+- Normalizing
+- Resampling
+- Aligning
+##### Analyze spectrum
+To view the frequency content of a signal, you can calculate the power spectrum with the pspectrum function.    
+- pspectrum(mysig)    
+If you don't use any output arguments, pspectrum creates a plot.    
+***
+To zoom in on the meaningful seismic activity, you can set the frequency limits while calculating the power spectrum.
+- pspectrum(mysig,"FrequencyLimits",[a b])
+*** 
+
 
