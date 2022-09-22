@@ -18,6 +18,7 @@ Fourier bases for C^N, N是维度
 - small n, to indicate the index of the element within each vector
 
 ##### Linear time-invariant filters
+___冲击响应是一个LTI系统的特征___    
 Time invariance
 y[n] = H{x[n]} <==> H{x[n-n0]} = y[n-n0]    
 ![image](https://user-images.githubusercontent.com/51925070/191734954-7bb23571-e9f5-46b7-bde5-d7cb533bc383.png)
@@ -27,6 +28,14 @@ Another requirement that is not mandatory, but makes a lot of sensem, is that th
 ##### Convolution
 ![image](https://user-images.githubusercontent.com/51925070/191736639-53c73780-5f29-409b-8542-4e27f93fbe3b.png)
 In general, we can always write x[n](a generic discrete time sequence as the sum of time delayed deltas scaled by the values of the sequenceitself.)
+___The convolution which represents the output of a filter given its impulse response and an arbitary input sequence x[n] 用卷积计算LTI系统的输出___    
+It is actually an algorithmic formula to compute the output of the filter.
+![image](https://user-images.githubusercontent.com/51925070/191738763-d1fd565c-36aa-42ef-b42a-c3500c873b76.png)
+___inner product: 加权求和___
+![image](https://user-images.githubusercontent.com/51925070/191740011-be2dbced-4821-4483-bc74-d4fc2d6440fb.png)
+The convolution is also associative, which means that if you have a cascaded system, you can lump their effevt into a single filter, whose impulse response is the convolution of the individual impulse response.
+
+#### The moving average filter
 
 
 ### MATLAB for Signal Processing Review
