@@ -71,15 +71,15 @@ And this "k+1" that affects only the summation index can be propagated to the su
 ![image](https://user-images.githubusercontent.com/51925070/192130544-1816f180-20ae-4b36-b1fa-c4830b388559.png)    
 We obtain the relationship that we were looking for between the moving average over capital M points, and the moving average over M-1 delayed by 1.
 ![image](https://user-images.githubusercontent.com/51925070/192130591-98b81116-c994-4b3e-a8c7-1b26cef2e677.png)    
-![image](https://user-images.githubusercontent.com/51925070/192130936-34e583fc-a7eb-416b-b3dd-fd6a21d39735.png)
-![image](https://user-images.githubusercontent.com/51925070/192130981-be0471ee-157b-4d3f-8fc8-10803fa8a1ec.png)
-![image](https://user-images.githubusercontent.com/51925070/192131004-5d6f65bd-1e40-44a0-aa2a-b419d96a2cec.png)
+
 
 
 ###### Leaky integrator
 ![image](https://user-images.githubusercontent.com/51925070/192130826-7679edf9-19f7-4580-8ad9-83cdeae91dae.png)
 ![image](https://user-images.githubusercontent.com/51925070/192130926-fa89eef0-8936-4a1f-9179-3eede53aa90d.png)
-
+![image](https://user-images.githubusercontent.com/51925070/192130936-34e583fc-a7eb-416b-b3dd-fd6a21d39735.png)
+![image](https://user-images.githubusercontent.com/51925070/192130981-be0471ee-157b-4d3f-8fc8-10803fa8a1ec.png)
+![image](https://user-images.githubusercontent.com/51925070/192131004-5d6f65bd-1e40-44a0-aa2a-b419d96a2cec.png)
 
 
 ### MATLAB for Signal Processing Review
