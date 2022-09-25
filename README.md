@@ -55,6 +55,31 @@ ___inner product: 加权求和___
 The convolution is also associative, which means that if you have a cascaded system, you can lump their effevt into a single filter, whose impulse response is the convolution of the individual impulse response.
 
 #### The moving average filter
+![image](https://user-images.githubusercontent.com/51925070/192130195-1ed552c6-2dd7-43b3-a74a-f72fbad69566.png)     
+And it is very easy to see that if we put the delta function in here, this is the average relationship that we saw before.    
+![image](https://user-images.githubusercontent.com/51925070/192130303-092e0e55-bdfd-430a-a488-0510312f8033.png)
+![image](https://user-images.githubusercontent.com/51925070/192130309-bfb02f02-88ef-4d7e-af4c-4c9f02577520.png)
+![image](https://user-images.githubusercontent.com/51925070/192130332-ea3439c7-70e3-460c-9a30-8a90cfcb7cf6.png)
+![image](https://user-images.githubusercontent.com/51925070/192130334-f29a34f6-aa82-49ce-aa93-efd37859b85e.png)
+![image](https://user-images.githubusercontent.com/51925070/192130378-38594fe1-8aaf-4c13-bdd1-ac629dd84ce3.png)
+![image](https://user-images.githubusercontent.com/51925070/192130394-8084608a-8088-4a26-a7d4-0547e340a834.png)    
+We can rearrange the index of the signal like so:    
+![image](https://user-images.githubusercontent.com/51925070/192130412-4afa91e4-06e8-4741-8778-5bdaee1c086d.png)    
+And this "k+1" that affects only the summation index can be propagated to the summation range.     
+![image](https://user-images.githubusercontent.com/51925070/192130450-2cec000c-e490-4590-9a7f-f1b85f609c06.png)
+![image](https://user-images.githubusercontent.com/51925070/192130479-bc4f31ad-3b14-494f-9e70-18f1ac2693b1.png)
+![image](https://user-images.githubusercontent.com/51925070/192130544-1816f180-20ae-4b36-b1fa-c4830b388559.png)    
+We obtain the relationship that we were looking for between the moving average over capital M points, and the moving average over M-1 delayed by 1.
+![image](https://user-images.githubusercontent.com/51925070/192130591-98b81116-c994-4b3e-a8c7-1b26cef2e677.png)    
+![image](https://user-images.githubusercontent.com/51925070/192130936-34e583fc-a7eb-416b-b3dd-fd6a21d39735.png)
+![image](https://user-images.githubusercontent.com/51925070/192130981-be0471ee-157b-4d3f-8fc8-10803fa8a1ec.png)
+![image](https://user-images.githubusercontent.com/51925070/192131004-5d6f65bd-1e40-44a0-aa2a-b419d96a2cec.png)
+
+
+###### Leaky integrator
+![image](https://user-images.githubusercontent.com/51925070/192130826-7679edf9-19f7-4580-8ad9-83cdeae91dae.png)
+![image](https://user-images.githubusercontent.com/51925070/192130926-fa89eef0-8936-4a1f-9179-3eede53aa90d.png)
+
 
 
 ### MATLAB for Signal Processing Review
