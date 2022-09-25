@@ -25,8 +25,8 @@ The inner product between any two vectors in the basis is equal to the delta of 
 ![image](https://user-images.githubusercontent.com/51925070/192094880-4a9466f7-19ec-4f23-91a3-21fac5c5f583.png)
 
 ###### Change of basis
-![image](https://user-images.githubusercontent.com/51925070/192094929-e4643bd6-850f-432a-ba4b-ed348a9bb6c5.png)
-![image](https://user-images.githubusercontent.com/51925070/192094939-4f47b06a-cf81-4c1f-9747-04fa4a129b60.png)
+![image](https://user-images.githubusercontent.com/51925070/192094929-e4643bd6-850f-432a-ba4b-ed348a9bb6c5.png)    
+![image](https://user-images.githubusercontent.com/51925070/192094939-4f47b06a-cf81-4c1f-9747-04fa4a129b60.png)    
   What is remarkable however, is that the factors used in this linear combination do not depend on the vectors that we are manipulating. These are just inner products between vectors in the original basis and the new basis. As a matter of fact, we can write this sum here as matrix vector multiplication. 
 - In other words, given a starting basis and an orthogonal arrival basis. You can compute this change of basis matrix once and for all. And everytime you have to change the reference system for a vector(a signal), 只需要做一次矩阵向量乘法。We will see very soon that this is really what't behind the DFT 算法.
 
