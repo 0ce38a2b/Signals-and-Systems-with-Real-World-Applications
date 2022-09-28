@@ -108,6 +108,52 @@ We obtain the relationship that we were looking for between the moving average o
 ![image](https://user-images.githubusercontent.com/51925070/192131004-5d6f65bd-1e40-44a0-aa2a-b419d96a2cec.png)
 
 
+###### Filter classification in the time domain
+According to the shape of their impluse response, we can already label a filter as belonging to one of the following categories.    
+![image](https://user-images.githubusercontent.com/51925070/192688869-fdd5b8eb-f8b8-450e-b069-cdcaa29ca292.png)
+![image](https://user-images.githubusercontent.com/51925070/192688912-70bd05b3-ba1e-486b-bf63-f59a7d6b7e85.png)
+![image](https://user-images.githubusercontent.com/51925070/192688956-f317dac7-f841-4be9-b69f-f0de50cf2b5b.png)
+![image](https://user-images.githubusercontent.com/51925070/192689223-0d282059-03ce-47a6-9061-9efadab7b3bf.png)
+
+###### Filter stability
+![image](https://user-images.githubusercontent.com/51925070/192689883-52d2a64e-792c-477f-a74f-45e5e229f60f.png)
+![image](https://user-images.githubusercontent.com/51925070/192689943-6b4811aa-f818-4f81-852a-22f75e03ffb3.png)
+![image](https://user-images.githubusercontent.com/51925070/192690041-c99dec4a-f9df-4b17-a780-39d2dea37072.png)
+![image](https://user-images.githubusercontent.com/51925070/192690149-5e1f5eee-a4b3-48e4-91df-5b5ede7f827e.png)
+
+
+###### The convolution theorem
+![image](https://user-images.githubusercontent.com/51925070/192690354-e2c51fb4-b5e2-4b99-b342-02d7862601bd.png)
+An Eigen sequence is a aequence that when input to a linear time invariant filter, returns the sequence itself times a scaling factor which happens to be the value of the DTFT of the impulse response at the frequency of the input.
+![image](https://user-images.githubusercontent.com/51925070/192690791-99c9b456-1ac4-4633-b211-705c9b9df469.png)
+![image](https://user-images.githubusercontent.com/51925070/192690928-e9d12958-a326-4147-bc08-d8e03918fdf1.png)
+![image](https://user-images.githubusercontent.com/51925070/192691152-60465cc7-1acf-4ebd-be56-5757be4fb42b.png)    
+Filter types according to phase response
+- Linear phase
+- Nonlinear phase
+
+
+
+###### Filter classification in the frequency domain
+![image](https://user-images.githubusercontent.com/51925070/192693740-80abadf0-2ea3-435d-ad35-27dc5febed9e.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ### MATLAB for Signal Processing Review
 #### Spectral Analysis Workflow
 - Import signals
