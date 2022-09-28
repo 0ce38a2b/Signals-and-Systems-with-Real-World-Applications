@@ -31,10 +31,36 @@ The inner product between any two vectors in the basis is equal to the delta of 
 - In other words, given a starting basis and an orthogonal arrival basis. You can compute this change of basis matrix once and for all. And everytime you have to change the reference system for a vector(a signal), 只需要做一次矩阵向量乘法。We will see very soon that this is really what't behind the DFT 算法.
 
 ##### Fourier Analysis
+![image](https://user-images.githubusercontent.com/51925070/192440517-595e1c3e-11a9-4a25-9be5-da992e3ef597.png)
+![image](https://user-images.githubusercontent.com/51925070/192441204-da95e6c1-8151-45d1-bd4d-0e59e907e2fc.png)    
 Fourier bases for C^N, N是维度
 - So we need N different vectors, each one of which will have length N.
 - k will be the index that indicates different vector
 - small n, to indicate the index of the element within each vector
+- 实则每一个向量k, 都是一个离散的正弦信号，频率不同
+![image](https://user-images.githubusercontent.com/51925070/192443407-22f52cab-9188-44a3-bef8-8344f0e739a1.png)
+![image](https://user-images.githubusercontent.com/51925070/192443603-025b2bbe-180f-415c-b803-1286428ecda8.png)
+
+##### DFT
+![image](https://user-images.githubusercontent.com/51925070/192448276-9f31c831-a95b-4550-b795-0fc575b74580.png)
+
+![image](https://user-images.githubusercontent.com/51925070/192448450-0cb25bb4-9525-4184-86c8-e26d67dc35dc.png)        
+  Given an arbitrary element of C^N(call it x), we want to express x in this new Fourier basis.So the analysis formula will give us new coefficients for the vector in the new basis.And each coefficient, Xk will be simply the inner product of x with each vector of the new basis.(x 是原信号，wk 是傅里叶基向量，Xk 既是傅里叶系数)    
+ If we want to go back to original representation for x, we simply have to sum a scaled version of all the basis functions. Please note here that since the basis is not orthonormal, and we choose to normalize in the synthesis formula by dividing N.
+ ![image](https://user-images.githubusercontent.com/51925070/192451142-0b025bc1-1982-4db8-9239-381fd0824d8d.png)    
+ If we recall Parseval's theorem, we know that the energy of a signal will not change if we change the underlying basis, so ener
+
+
+
+
+
+
+
+
+
+
+
+
 
 ##### Linear time-invariant filters
 ___冲击响应是一个LTI系统的特征___    
