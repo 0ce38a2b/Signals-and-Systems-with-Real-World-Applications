@@ -147,8 +147,17 @@ Filter types according to phase response
 - Nonlinear phase
 
 ##### The ideal lowpass filter
-
-
+Let's try and compute the impulse response(时域的) from the frequency response by taking the inverse Fourier transform.
+![image](https://user-images.githubusercontent.com/51925070/193399479-a7528bcc-6743-4bc6-9add-49c7ac53275a.png)
+![image](https://user-images.githubusercontent.com/51925070/193399527-24fb9acb-89e3-4b1e-988e-00e6bd5d98d1.png)
+![image](https://user-images.githubusercontent.com/51925070/193399568-63c7973c-f2b5-4994-aac4-f8fde05ba8c7.png)    
+In spite of the shortcomings, the ideal low pass filter is so important that we use two special functions to describe its impulse response and frequency response.
+![image](https://user-images.githubusercontent.com/51925070/193399764-401a4189-5a7f-4356-b652-a68ea0899b20.png)    
+H(e^jw) 就是方块函数    
+![image](https://user-images.githubusercontent.com/51925070/193399810-1e1209fd-1c77-47e0-9f76-0f3fb961ec5e.png)
+![image](https://user-images.githubusercontent.com/51925070/193399995-3a28d22c-2e7f-4db0-a9fa-fc9cf9e0eeb7.png)    
+For h[n], n/3 means that every third sample, as we said, is going to be 0.    
+![image](https://user-images.githubusercontent.com/51925070/193400149-5e8a9086-a90f-4173-abfe-a5ceeed74bd6.png)
 
 
 
@@ -182,5 +191,13 @@ If you don't use any output arguments, pspectrum creates a plot.
 To zoom in on the meaningful seismic activity, you can set the frequency limits while calculating the power spectrum.
 - pspectrum(mysig,"FrequencyLimits",[a b])
 *** 
+
+##### Digital Filter Design
+###### Linear System Representations
+Signal Processing Toolbox provides several models for representing linear time-invariant systems. This flexibility allows you to choose a representation that best suits your application and convert between different representations.    
+In this module, you will represent linear systems using:
+- Linear difference equations
+- Convolution / impulse response
+- Transfer function / poles-zeros
 
 
